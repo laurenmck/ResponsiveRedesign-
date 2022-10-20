@@ -1,0 +1,282 @@
+/* html{
+  background-color: rgb(181, 225, 254);
+} */
+
+.llama img{
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+p{
+  font-weight: 100%;
+}
+
+body {
+  font-family: futura-pt,sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  /* margin: 150px 150px 50px 150px; */
+  background-color: #C8E7F5
+  /* background-color: rgb(171, 208, 232); */
+  /* rgb(181, 225, 254); */
+}
+
+.content{
+  margin-top: 75px;
+}
+
+.button-34 {
+  background: rgb(141, 201, 240);
+  border-radius: 1500px;
+  box-shadow: rgb(132, 193, 233);
+  box-sizing: border-box;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  width: fit-content;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+h1{
+  font-size: 45px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+h3{
+  font-size: 27px;
+  font-family: monospace;
+  color: grey;
+  box-shadow: honeydew;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+h1, h2, h3{
+  font-weight: 250;
+  text-align: center;
+}
+
+a{
+  color:  #0671B7;
+}
+
+/* .tiny{
+  margin
+} */
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+
+p{
+  margin: 10px 200px 30px 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  font-size: larger;
+}
+
+img{
+  box-shadow: 1px 2px 2px #1C6EA4;
+  /* margin-bottom: 50px; */
+  /* border-radius: 30px; */
+}
+
+.list{
+  margin: 10px 150px 50px 150px;
+  font-size: 19px;
+  border-radius: 10px;
+  background-color: rgb(141, 201, 240);
+  padding: 10px;
+}
+
+/* Second Level */
+ul ul{
+  margin-left: 25px;
+}
+
+ul li{
+  margin-left: 20px;
+}
+
+/* Third Level */
+
+.list li{
+  list-style-type: circle;
+}
+
+.image{
+  /* text-align: justify;   */
+  margin: 10px;
+}
+
+.red-text-shadow{
+  text-shadow: 1px 2px 2px #1C6EA4;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  /* width: 33.33%; */
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+
+/*nav bar*/
+
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: 'Nunito', sans-serif;
+ }
+
+ navbar{
+  font-family: monospace;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+
+ /* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #67A3D9;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo {
+  font-size: 32px;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
+ .menu li:hover {
+  background-color: #0671B7;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
+ /* DROPDOWN MENU */
+ .services {
+  position: relative; 
+ }
+ .dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+ }
+ .dropdown li + li {
+  margin-top: 10px;
+ }
+ .dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+ }
+ .dropdown li:hover {
+  background-color: #4c9e9e;
+ }
+ .services:hover .dropdown {
+  display: block;
+ }
+
+ /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:teal;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#4c9e9e;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ .dropdown {
+  left: 50%;
+  top: 30px;
+  transform: translateX(35%);
+ }
+ .dropdown li:hover {
+  background-color: #4c9e9e;
+ }
+ }
+
+ /*BULLET PTS*/
+ 

@@ -1,70 +1,179 @@
 <html>
 	<head>
-    <link rel="stylesheet" href="personas.css" /> 
+    <link rel="stylesheet" href="rr.css" /> 
+    <link href="http://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
 	</head>
 	<body>
-    <h1 class="button-34">Personas & Storyboarding</h1>
-    <p>The goal of this assignment was to step into a users shoes by observing users interacting 
-      with an interface, interviewing users about their experiances and illistrating a storyboard 
-      for one of my user personas. This assignment consisted of 4 parts: Preparation, Recording Observations,
-      Personas, and Storyboards. I choose to focus in the <span class="red-text-shadow">Brown Univeristy Mail Room Interface</span> for this project</p>
-
-      <div class="image"><img src="personasPhotos/mailroom.jpg" alt="mailroom" width="750" height="500"></div>
-
-      <div class="gallery-container">
-        <div class="image"><img src="personasPhotos/interfcaceS1.jpg" alt="screne1" width="310" height="210"></div>
-        <div class="image"><img src="personasPhotos/interfaceInstructions.jpg" alt="instructions" width="310" height="210"></div>
-        <div class="image"><img src="personasPhotos/havepackages.jpg" alt="screne2" width="310" height="210"></div>
+    <header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><div class="llama"><img src="rrphotos/lustfulllama copy.jpeg" alt="wayland bakery photo 3" width="60" height="75"></div></div>
       </div>
-      
-      <h2 class="button-34">Part 1: Preparation</h2>
-
-      <p>In part one, I selected an accessable interface - the Brown Univeristy Mail Room Interface, created a sketch and a breif description of the interface and 
-        prepared some questions for users regarding their experiances with my choosen interface.
-      </p>
-
-      <div class="image"><img src="personasPhotos/part1.jpeg" alt="part one image" width="600" height="600"></div>
-
-      <h2 class="button-34">Part 2: Recording Observations</h2>
-
-      <p>In part two, I observed users interacting with the Brown Mail Room Interface and asked users questions about their 
-        experices with this interface. </p>
-
-      <div class="image"> <img src="personasPhotos/part2.jpg" alt="part two image" width="800" height="600"> </div>
-
-      <h2 class="button-34">Part 3: Personas</h2>
-
-      <p>In part three, I used the info I recieved from speaking with users to create two personas for my interface.
-      </p>
-
-      <h3>Persona 1: Shopper Sally</h3>
-      <div class="image"> <img src="personasPhotos/part3.jpg" alt="shopper sally photo" width="800" height="400"> </div>
-      <div class="image"> <img src="personasPhotos/shopperSally.jpg" alt="shopper sally desc" width="800" height="200"></div>
-
-      
-      <h3>Persona 2: Hippie Hank</h3>
-      <div class="image"><img src="personasPhotos/hankPersona.jpg" alt="hippie hank photo" width="800" height="400"></div>
-      <div class="image"><img src="personasPhotos/hippieHank.jpg" alt="hippie hank desc" width="800" height="200"> </div>
-
-      <h2 class="button-34">Part 4: Storyboards</h2>
-
-      <p>In part four, I created a storyboard to depict a users experiance with the Brown U Mailroom Interface.</p>
-
-      <div class="gallery-container">
-        <div class="image">
-          <img src="personasPhotos/personaspt1.jpg" alt="storyboard pt1" width="800" height="400">
-  
-          <img src="personasPhotos/personaspt2.jpg" alt="storyboard pt2" width="800" height="400">
-  
-          <img src="personasPhotos/personaspt3.jpg" alt="storyboard pt3" width="800" height="400">
-  
-          <img src="personasPhotos/personaspt4.jpg" alt="storyboard pt4" width="800" height="400">
-  
-          <img src="personasPhotos/personaspt5.jpg" alt="storyboard pt5" width="800" height="400">
-  
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#part-1">Usability Problems</a></li>
+            <li><a href="#part-2">Visual Design</a></li>
+            <li><a href="#part-3">Responsive Redesign</a></li>
           </div>
-      </div>
-        
+        </ul>
+      </nav>
+    </header>
+    <section class="content">
+      <h1 id="top" class="button-34">Responsive Redesign</h1>
+      <p>The goal of this assignment is to practice the workflow of redesigning a simple website.
+        There are three parts to this assignment; Identifying Usability Problems, Visual Redesign and Responsive Redesign.</p>
+    
+        <h2 id="part-1" class="button-34">Part 1: Identifying Usability Problems </h2>
 
+        <h3>Picking a Web Page</h3>
+        <p>For this assignment I will be reviewing and redesigning the <span class="red-text-shadow"><a href="http://www.waylandbakery.com/">Wayland Bakery Website.</a></span>
+          This website has one main page and a few subparts to display different Menus. I choose this page because right before this assignment was released 
+          I was looking for a bakery to order a cake from and when I went to the Wayland Bakery website I was taken back by the unexpected design of this website. 
+
+          <div class="gallery-container">
+            <div class="row">
+              <div class="column">
+                <h3>Main Page</h3>
+                <div class="image"><img src="rrphotos/wayland-bakery.png" alt="wayland bakery photo 1" width="400" height="250"></div>
+                <div class="image"><img src="rrphotos/wb2.png" alt="wayland bakery photo 2" width="400" height="250"></div>
+                <div class="image"><img src="rrphotos/wb-3.png" alt="wayland bakery photo 3" width="400" height="250"></div>
+              <div class="image"><img src="rrphotos/wb4.png" alt="wayland bakery photo 4" width="400" height="125"></div>
+              </div>
+              <div class="column">
+                <h3>Menu Sub Pages</h3>
+                <div class="image"><img src="rrphotos/breads.png" alt="wayland bakery breads" width="400" height="250"></div>
+                <div class="image"><img src="rrphotos/pies.png" alt="wayland bakery pies" width="400" height="250"></div> 
+                <div class="image"><img src="rrphotos/holiday.png" alt="wayland bakery pies" width="400" height="250"></div>     
+                <div class="image"><img src="rrphotos/cakes.png" alt="wayland bakery cakes" width="400" height="125"></div>
+              </div>       
+            </div>
+          </div>
+
+        <h3>Finding Problems</h3>
+
+        <p>Overall this website is simple but has issues regarding ease of use and design. </p>
+
+        <div class="list">
+          <h4>Usability:</h4>
+          <ul>
+            <li>There is no way for the user to seamlessly navigate through the website, they must scroll through to find what they need. </li>
+            <li>The text is small and the spacing is not great, decreasing readability.</li>
+            <li>The information is presented in a unexpected order, which could be confusing for some users.</li>
+            <li>There is no information under the "POSTS" header at the top of the page, and it is the first thing the user sees. This makes the website look unkept and could cause confustion.</li>
+            <li>Address/map of bakery location shows up before the menus in the user flow; most users will use google maps to find address, not the website. Contact information and Bakery offerings should be easiest accessable. </li>
+            <li>"Contact the sight administrator here" is confusing and links to the bakery email address. Clarifying is this email is used to report issues with the website or get in contafct with the bakery would be helpful.</li>
+            <li>Consistency and Standards Issue <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">(Heuristics #4): </a> 
+              <ul>
+                <li>The photos on the right side of the main page are not all the same size. The forth one down has a different width than the rest.</li>
+                <li>When you click into each menu, the formatting of these pages are significantly different. For example, the cake page just contains photos of past cakes whereas the bread page 
+                  contains a list of the different breads and their ingredients. 
+                </li>
+                <li>Users typically expect a header that helps them navigate through the website, which this webpage lacks.</li>
+              </ul>
+            </li>
+            </ul>
+
+            <h4>Learnability:</h4>
+              <ul>
+                <li> Recognition Rather than Recall: <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">(Heuristics #6): </a> 
+                  <ul>
+                    <li> On the front page of the website there is a note that states to order a cake, dessert or other morsel you have to call the bakery. When navigating to those respective tabs, this is not shown so the user must racall it from earlier in the interface.</li>
+                  </ul>
+                  <li> This website does not do a good job of directing users attention. Users must search for what they need on this website. </li>
+                  <li> This website is simple in design so learnability is not too much of an issue but the information could be provided in a more clear manner.</li>
+                </li>
+              </ul>
+
+            <h4>Memorability:</h4>
+            <ul>
+              <li> This website does not provide much user functionality, so memorability doesn't pose as a large issue. However, a more consistent user flow would better aid users in creating a mental model of the website layout. </li>
+            </ul>
+          </div>
+        
+          <h3>Accessability</h3>
+
+          <p>The WAVE sight detected 8 Errors, 2 Contrast Errors and 5 Alerts.</p>
+
+          <div class="list">
+            <ul>
+              <li> First 4 errors: Some of the images imbedded in the website were missing alternative text descriptions. In the occasion that the image doesn't show up for the user, this helps eliminate confusion and communicate to the what is being communicated through the photo. </li>
+              <li> Second 4 errors: These errors were cased by links in the website that contained no text. According to the WAVE website, If a link contains no text, the function or purpose of the link will not be presented to the user. This can introduce confusion for keyboard and screen reader users. Some of the images on the right side of the homepage linked to their respective item category. Until doing this, I was unaware of this functionality in the webpage.</li>
+              <li> Contrast Warnings: Low contrast between text and images can cause readability issues especially for users with compromised vision. </li>
+              <li> 1st Alert: The link to the bakery email linked in the "Contact the site administrator here" got flagged as a suspicious link.</li>
+              <li> 4 Other Alters: These errors were caused by redundant links; each header on the homepage - information, hours, menu, and story - is a link that link back to the same information, opened in a new page. This does not help the user at all. </li>
+            </ul>
+          </div>        
+      
+          <h2 id="part-2" class="button-34">Part 2: Visual Design </h2>
+          <h3>Low-Fidelity Wireframes</h3>
+          <div class="gallery-container">
+            <div class="row">
+              <div class="column">
+                <div class="image"><img src="rrphotos/lowFpage1.jpg" alt="low Low-Fidelity Wireframe page 1" width="400" height="600"></div>
+              </div>
+              <div class="column">
+                <div class="image"><img src="rrphotos/lowFpage2.jpg" alt="low Low-Fidelity Wireframe page 2/3" width="400" height="600"></div>
+              </div>       
+            </div>
+          </div> 
+   
+          <h3>Visual Design Style Guide</h3>
+
+          <div class="gallery-container">
+            <div class="row">
+              <div class="column">
+                <div class="image" class="center"><img src="rrphotos/styleGuide.png" alt="style guide" width="750" height="350"></div>
+              </div>
+            </div>
+          </div>
+
+          <h3>High-Fidelity Wireframes</h3>
+
+          <div class="gallery-container">
+            <div class="row">
+              <div class="column">
+                <div class="image" class="center"><img src="rrphotos/HF1.jpg" alt="high-fidelity-1" width="450" height="600"></div>
+              </div>
+              <div class="column">
+                <div class="image" class="center"><img src="rrphotos/HF2.jpg" alt="high-fidelity-2" width="450" height="600"></div>
+              </div>      
+            </div>
+          </div>
+
+        <br>
+        <br>
+
+        <h2 id="part-3" class="button-34">Part 3: Responsive Redesign</h2>
+
+        <h3>Visit the redesigned site <a href="https://littlellama246.github.io/wayland-bakery/">here!</a></h3>
+        <h3>Visit the old site <a href="https://www.waylandbakery.com/">here!</a></h3>
+        <br>
+        <p class="tiny">Below are the page layouts for the Laptop, iPad and iPhone versions of this site.</p>
+        <div class="gallery-container">
+          <div class="row">
+            <div class="column">
+              <div class="image"><img src="rrphotos/web1.png" alt="website photo 1" width="400" height="250"></div>
+              <div class="image"><img src="rrphotos/web2.png" alt="website photo photo 2" width="400" height="250"></div>
+              <div class="image"><img src="rrphotos/web3.png" alt="website photo photo 3" width="400" height="125"></div>
+            </div>
+            <div class="column">
+              <div class="image"><img src="rrphotos/ipad1.png" alt="ipad website photo 1" width="200" height="266.6"></div>
+              <div class="image"><img src="rrphotos/ipad2.png" alt="ipad website photo 2" width="200" height="266.6"></div> 
+              <div class="image"><img src="rrphotos/ipad3.png" alt="ipad website photo 3" width="200" height="133.3"></div>     
+            </div>      
+            <div class="column">
+              <div class="image"><img src="rrphotos/iphone1.png" alt="iphone website photo 1" width="160" height="227.5"></div>
+              <div class="image"><img src="rrphotos/iphone2.png" alt="iphone website photo 2" width="160" height="227.5"></div> 
+              <div class="image"><img src="rrphotos/iphone3.png" alt="iphone website photo 3" width="160" height="113.75"></div> 
+            </div>   
+          </div>
+        </div>
+      </section>
 	</body> 
 </html>
